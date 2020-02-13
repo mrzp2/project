@@ -1,0 +1,13 @@
+目前许多人github上不去，据说是国内访问的经过新加坡的亚马逊中心挂掉，所以需要改一些东西。
+1.在C盘目录打开C:\Windows\System32\drivers\etc
+2.找到其中的hosts文件，右键该文件，点击安全>编辑，选中user，下边完全控制打钩，然后确定就可以。
+3.用记事本格式打开hosts，在最后追加以下内容：
+192.30.253.112 github.com
+185.199.108.153 assets-cdn.github.com
+185.199.109.153 assets-cdn.github.com
+185.199.110.153 assets-cdn.github.com
+185.199.111.153 assets-cdn.github.com
+199.232.5.194 github.global.ssl.fastly.net
+保存退出
+4.cmd打开dos窗口，输入ping github.com 出现请求时间等一系列东西就代表好了。
+5.这时候再在火狐登陆github就可以正常登陆了。
